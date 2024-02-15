@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+
+.header {}
+
+body {}
+
+.btn-book-table {
+    font-family: 'Poppins', sans-serif;
+    text-transform: uppercase;
+    color: #fff;
+    line-height: 25px; 
+    border-radius: 1px;
+    padding: 0 9px;
+    font-weight: 700;
+    background-color: #bb9356;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.nav-item .nav-link {
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #282828;
+    font-weight: 700;
+    /* line-height: 100px; */
+}
+i{
+    cursor: pointer;
+}
