@@ -318,6 +318,12 @@ a {
   position: relative;
 }
 
+.menu__list li a:hover {
+  position: inherit;
+  color: #bb9356 !important;
+  border-bottom: 1px solid #bb9356 !important;
+}
+
 .menu__list li a.active {
   position: inherit;
   color: #bb9356 !important;
