@@ -1,0 +1,55 @@
+   <!-- <div class="section__start">
+        <header class="header">
+          <nav class="navbar navbar-expand-lg w-100">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/logo_light.png" alt="Logo" height="29" width="118">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PAGES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">MENU</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">BLOG</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="shop.html">SHOP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+                    </ul>
+                    <div class="d-flex align-items-center justify-content-between">
+                        <button class="btn btn-book-table me-3">BOOK A TABLE</button>
+                        <div class="icons-container d-flex align-items-center gap-2">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <i class="fa-solid fa-bars"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+         
+        </header>
+
+        <div class="box">
+          <h1 class="main__title">We are food master</h1>
+
+          <p class="box__subtitle">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis,
+            maiores aut velit consectetur cupiditate sit excepturi odio eveniet,
+            iste porro architecto.
+          </p>
+        </div>
+      </div> -->

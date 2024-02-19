@@ -1,0 +1,24 @@
+@media only screen and (max-width: 992px) {
+    
+    .menu {
+        /* background: scroll; */
+        position: relative;
+        /* width: 100%; */
+    }
+
+
+    .list-resp {
+        flex-direction: column;
+        border-top: 1px solid green;
+        position: absolute;
+        color: black;
+        padding-top: 10px;
+        background: #8c0b0b;
+        width: 100%;
+        top: 80px;
+        left: 0;
+    }
+
+    
+  
+}
