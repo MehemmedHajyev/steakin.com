@@ -1,0 +1,498 @@
+@charset "UTF-8";
+/* THERE WE WRITE ALL MIXINS */
+/* THERE WE WRITE ALL VARIABLES */
+/*------------- RESET ALL CSS -------------*/
+@import url("https://fonts.googleapis.com/css2?family=Ruthie&display=swap");
+@import "vendors/bootstrap-grid.css";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-family: "Poppins";
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  padding: 20px;
+  line-height: 1;
+  font-family: "Poppins";
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: none;
+  line-height: normal;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  outline: none;
+}
+
+/* IMPORT FONTS FROM GOOGLE FONTS */
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Poppins";
+  src: url("../fonts/Poppins/Poppins-SemiBold.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+.main__title {
+  font-size: 45px;
+  line-height: 1;
+  color: #bb9356;
+}
+
+.second__title {
+  margin-top: 12px;
+  font-size: 45px;
+  letter-spacing: -2px;
+}
+
+.third__title {
+  font-size: 15px;
+  line-height: 1.7;
+  display: inline-block;
+  color: #fff;
+}
+
+.btn__main {
+  background-color: transparent;
+  color: #222;
+  border: 2px solid #222;
+  line-height: 47px;
+  padding: 0px 32px;
+  border-radius: 29px;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: 0.5s;
+}
+.btn__main:hover {
+  background-color: #222;
+  color: #fff;
+}
+
+.menu {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+}
+.menu__logo {
+  max-width: 150px;
+}
+.menu__logo img {
+  width: 100%;
+  filter: invert(1);
+}
+.menu__list {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 15px;
+  color: #fff;
+}
+.menu__item {
+  font-size: 14px;
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.section__footer {
+  padding: 80px 0;
+  background-color: #222;
+}
+.section__footer .footer__data {
+  text-align: center;
+}
+@media screen and (max-width: 992px) {
+  .section__footer .footer__data {
+    margin-bottom: 50px;
+  }
+}
+.section__footer .footer__data h2 {
+  font-size: 15px;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: #fff;
+  margin-bottom: 26px;
+}
+.section__footer .footer__data img {
+  margin-bottom: 8px;
+}
+.section__footer .footer__data ul {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__footer .footer__data ul li {
+  color: #fff;
+}
+.section__footer .footer__data input[type=email] {
+  padding: 12px 24px;
+  width: 100%;
+}
+
+.section__start {
+  position: relative;
+  background-image: url(../../assets/images/background/bg-slider.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  filter: brightness(0.8);
+  height: 100vh;
+}
+.section__start .box {
+  text-align: center;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  color: #fff;
+  transform: translate(-50%, -50%);
+}
+.section__start .box__title {
+  font-size: 5rem;
+  font-weight: 600;
+  text-transform: capitalize;
+  color: red;
+}
+.section__start .box__subtitle {
+  margin-top: 20px;
+  font-size: 1.4rem;
+  line-height: 30px;
+}
+.section__greetings {
+  padding: 60px 0;
+}
+.section__greetings .greetings__wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+}
+.section__greetings .greetings__wrapper__left {
+  text-align: center;
+  max-width: 400px;
+}
+.section__greetings .greetings__wrapper__left p {
+  margin: 24px 0;
+}
+.section__greetings .greetings__wrapper__right {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  max-width: 500px;
+}
+.section__greetings .greetings__wrapper__right img {
+  width: 225px;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media screen and (max-width: 576px) {
+  .section__greetings .greetings__wrapper__right img {
+    width: 100%;
+    max-height: 400px;
+  }
+}
+@media screen and (max-width: 992px) {
+  .section__greetings .greetings__wrapper {
+    justify-content: center;
+  }
+}
+
+/* CSS Animasyon Tanımı */
+@keyframes slideInFromTop {
+  0% {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(-100);
+    opacity: 1;
+  }
+}
+.slick-slide.slick-active .box__title,
+.slick-slide.slick-active .box__subtitle,
+.slick-slide.slick-active .main__title {
+  animation: slideInFromTop 1.5s ease forwards;
+}
+
+.slick-dots {
+  position: absolute;
+  bottom: -10px;
+  margin-bottom: 30px;
+}
+
+.slick-dots li button::before,
+.slick-dots li.slick-active button:before {
+  color: #fff;
+  opacity: 1;
+}
+
+.slick-dots li.slick-active button:before {
+  border: 1px solid #fff;
+  border-radius: 100%;
+}
+
+.menu__list {
+  position: relative;
+}
+
+.menu__list li a.active {
+  position: inherit;
+  color: #bb9356 !important;
+  border-bottom: 1px solid #bb9356 !important;
+}
+
+.btn-book-table {
+  background: #bb9356;
+  color: #fff;
+  padding: 5px;
+}
+
+.memo {
+  background: red;
+  fill: red;
+  color: red;
+  cursor: pointer;
+}
+
+.nav-link {
+  color: #fff !important;
+}
+
+i {
+  fill: #fff;
+  color: #fff;
+}
+
+.main__title {
+  font-family: "Ruthie", sans-serif;
+  font-size: 45px;
+}
+
+.one-section-desc {
+  font-size: 15px;
+  line-height: 1.66666;
+  color: #a5a5a5;
+  font-family: "Poppins", sans-serif;
+  display: inline-block;
+  max-width: 670px;
+}
+
+.__contact {
+  position: relative;
+  background-image: url(../../assets/images/background/bg-contact.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50vh;
+}
+
+.section__contact {
+  padding: 60px 0;
+}
+.section__contact .section__contact__right .form__input {
+  margin-bottom: 30px;
+}
+.section__contact .section__contact__right .form__input input {
+  background-color: #fff;
+  border-radius: 1px;
+  border: 2px solid #eee;
+  color: #9b9b9b;
+  padding: 8px 20px;
+  height: 51px;
+  font-size: 13px;
+  transition: all 0.3s linear 0ms;
+  width: 100%;
+}
+.section__contact .section__contact__right button[type=submit] {
+  background-color: #222;
+  font-size: 14px;
+  border: none;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 0 44px;
+  line-height: 51px;
+  transition: all 0.3s linear 0ms;
+  border-radius: 2px;
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  cursor: pointer;
+  font-weight: 700;
+  width: 100%;
+}
+
+.__shop {
+  position: relative;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50vh;
+}
+
+.section__shop {
+  padding: 60px 0;
+}
+.section__shop__filter {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid #eee;
+  margin-bottom: 30px;
+  border-radius: 3px;
+  padding: 20px 30px;
+}
+.section__shop span {
+  color: #474747;
+  font-size: 15px;
+}
+.section__shop select {
+  background-color: #fff;
+  border: 1px solid #eee;
+  font-size: 12px;
+  color: #9b9b9b;
+  padding: 0 8px;
+  height: 30px;
+}
+.section__shop__dishes {
+  gap: 15px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+.section__shop__item {
+  flex: 1 1 230px;
+}
+.section__shop__item .image__wrapper {
+  position: relative;
+  min-height: 200px;
+  width: 100%;
+}
+.section__shop__item .image__wrapper img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+.section__shop__item .image__wrapper::after {
+  content: "add to cart";
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transition: transform 0.3s ease; /* Применяем transition на translateY */
+  color: #fff;
+  background-color: #bb9356;
+  font-size: 13px;
+  font-weight: 700;
+  border-radius: 2px;
+  padding: 12px 18px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  opacity: 0; /* Начальная прозрачность */
+}
+.section__shop__item .image__wrapper:hover::after {
+  transform: translateX(-50%); /* Появление снизу вверх */
+  opacity: 1; /* Плавное изменение прозрачности */
+}
+.section__shop__item .main__info {
+  padding: 25px 0;
+  text-align: center;
+}
+.section__shop__item .main__info span:first-child {
+  font-size: 17px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 12px;
+}
+.section__shop__item .main__info span:last-child {
+  font-size: 16px;
+  color: #bb9356;
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */

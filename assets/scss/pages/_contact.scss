@@ -1,0 +1,45 @@
+.__contact {
+  position: relative;
+  background-image: url(../../assets/images/background/bg-contact.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  height: 50vh;
+}
+.section__contact {
+  padding: 60px 0;
+  .section__contact__right {
+    .form__input {
+      margin-bottom: 30px;
+      input {
+        background-color: #fff;
+        border-radius: 1px;
+        border: 2px solid #eee;
+        color: #9b9b9b;
+        padding: 8px 20px;
+        height: 51px;
+        font-size: 13px;
+        transition: all 0.3s linear 0ms;
+        width: 100%;
+      }
+    }
+    button[type="submit"] {
+      background-color: #222;
+      font-size: 14px;
+      border: none;
+      color: #fff;
+      text-transform: uppercase;
+      padding: 0 44px;
+      line-height: 51px;
+      transition: all 0.3s linear 0ms;
+      border-radius: 2px;
+      position: relative;
+      display: inline-block;
+      text-align: center;
+      cursor: pointer;
+      font-weight: 700;
+      width: 100%;
+    }
+  }
+}

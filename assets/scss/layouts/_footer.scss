@@ -1,0 +1,30 @@
+.section__footer {
+  padding: 80px 0;
+  background-color: #222;
+  .footer__data {
+    text-align: center;
+    @media screen and (max-width: 992px) {
+      margin-bottom: 50px;
+    }
+    h2 {
+      font-size: 15px;
+      font-weight: 600;
+      text-transform: uppercase;
+      color: map-get($myListColor, "main-font-color");
+      margin-bottom: 26px;
+    }
+    img {
+      margin-bottom: 8px;
+    }
+    ul {
+      @include flexbox(row wrap, space-between, center);
+      li {
+        color: map-get($myListColor, "main-font-color");
+      }
+    }
+    input[type="email"] {
+      padding: 12px 24px;
+      width: 100%;
+    }
+  }
+}

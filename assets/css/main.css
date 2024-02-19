@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Ruthie&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Ruthie&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +9,6 @@
     list-style: none;
     text-decoration: none;
 }
-
 
 .header {}
 
@@ -15,13 +18,18 @@ body {}
     font-family: 'Poppins', sans-serif;
     text-transform: uppercase;
     color: #fff;
-    line-height: 25px; 
+    line-height: 25px;
     border-radius: 1px;
     padding: 0 9px;
     font-weight: 700;
     background-color: #bb9356;
     display: inline-block;
     cursor: pointer;
+}
+
+.default-w {
+    max-width: 1170px;
+    margin: 50px auto;
 }
 
 .nav-item .nav-link {
@@ -31,6 +39,70 @@ body {}
     font-weight: 700;
     /* line-height: 100px; */
 }
-i{
+
+i {
     cursor: pointer;
+}
+
+.add-ext {
+    font-size: 45px;
+    line-height: 1;
+    color: #bb9356;
+    font-family: 'Ruthie', sans-serif !important;
+}
+
+.add-text-2 {
+    font-family: 'Abril Fatface', sans-serif;
+    font-size: 45px;
+}
+
+.memo {
+    border: 3px solid red;
+}
+
+
+.faml {
+    font-size: 15px;
+    line-height: 1.66666;
+    color: #a5a5a5;
+    font-family: 'Poppins', sans-serif;
+    display: inline-block;
+    max-width: 670px;
+}
+
+.btn-book-tb {
+    background-color: transparent;
+    color: #222;
+    border: 2px solid #222;
+    padding: 10px 30px;
+    border-radius: 20px;
+
+}
+
+.for-bg-img{
+    background-image: url(../img/section-one/bg-parallax6.jpg);
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main-flex-container{
+    background: white;
+    max-width: 1170px;
+    margin: 50px auto;
+    width: 100%;
+}
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 15px;
+}
+.felx-item{
+    flex:  1 1 400px;
+    border: 3px solid red;
+    height: 200px;
 }

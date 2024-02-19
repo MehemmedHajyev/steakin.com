@@ -1,0 +1,7 @@
+/* THERE WE WRITE ALL MIXINS */
+@mixin flexbox($flex-flow, $justify-content, $align-items) {
+    display: flex;
+    flex-flow: $flex-flow;
+    justify-content: $justify-content;
+    align-items: $align-items;
+}

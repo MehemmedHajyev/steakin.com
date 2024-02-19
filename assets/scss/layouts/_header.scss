@@ -1,0 +1,24 @@
+// THERE WE WRITE CSS CODE FOR HEADER LAYOUTS
+.menu {
+    @include flexbox(row nowrap, space-between, center);
+    padding-top: 20px;
+    &__logo {
+      max-width: 150px;
+      img {
+        width: 100%;
+        filter: invert(1);
+      }
+    }
+    &__list {
+      display: flex;
+      flex-flow: row wrap;
+      gap: 15px;
+      color: map-get($myListColor, "main-font-color");
+    }
+    &__item {
+      font-size: 14px;
+      font-family: "Poppins";
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+  }
